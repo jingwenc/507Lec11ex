@@ -57,18 +57,18 @@ print('The img source:')
 print(img_tag['src'])
 print('------')
 
-# print('List items within the goodbye tag')
-# goodbye_list_items = all_goodbye_elements[0].find_all('li')
-# for li in goodbye_list_items:
-#   print(li.string)
-# print('------')
-#
-# img_tag = soup.find('img')
-# print('The img width:')
-# print(img_tag['width'])
-# print('------')
-#
-# Url_tag = soup.find('a')
-# print('The URL:')
-# print(Url_tag['href'])
-# print('------')
+print('List items within the goodbye tag')
+goodbye_list_items = all_goodbye_elements[0].find_all('li')
+for li in goodbye_list_items:
+  print(li.string)
+print('------')
+
+img_tag = soup.find('img')
+print('The img width:')
+print(img_tag['width'])
+print('------')
+
+Url_tag = soup.find('a')
+print('The URL:')
+print(Url_tag['href'])
+print('------')
